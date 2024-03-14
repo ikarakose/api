@@ -7,8 +7,6 @@ use App\Http\Controllers\UserController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Middleware\IsAdmin;
 
-
-
 Route::get('/login', [UserController::class,"login"] )->name("login");
 Route::get('/logout', [UserController::class,"logout"] )->name("logout");
 Route::post('/login', [UserController::class,"loginPost"]);
